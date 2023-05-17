@@ -1,3 +1,50 @@
-footer p{
-    color: red;
+footer{
+    background-color: var(--first-color);
+    margin-top: 5.5rem;
+
+    .footer-container{
+        width: 100%;
+        padding-top: 1.3rem;
+        padding-bottom: 1.3rem;
+
+        
+        .footer-text{
+/*             border: 4px solid yellow; */
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            .footer-cn{
+/*                 border: 1px solid red; */
+                max-width: 220px; // change to auto!
+                min-width: 180px;
+                display: flex;
+                flex-direction: column;
+
+                h6{
+                    color: var(--white-color);
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                    margin-bottom: .5rem;
+                    font-family: 'Kanit', sans-serif;
+                }
+    
+                a, p{
+                    color: var(--white-color);
+                    font-size: var(--normal-font-size);
+                    font-weight: 300;
+                }
+
+                a:hover{
+                    color: var(--second-color);
+                }
+            }
+
+
+        }
+    }
+
+
 }

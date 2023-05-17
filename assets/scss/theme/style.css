@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800;900&display=swap");
 :root {
-  --first-color: #010101;
+  --first-color: #060104;
   --second-color: hsl(195, 42%, 83%);
   --third-color: #df7828;
   --white-color: #fff;
@@ -34,6 +34,7 @@
 body {
   color: var(--white-color);
   background-color: #f4f4f4;
+  background-color: green;
 }
 
 .container {
@@ -58,7 +59,6 @@ h3 {
   font-size: var(--h3-font-size);
   font-family: "Kanit", sans-serif;
   font-weight: 400;
-  width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 1rem;
 }
@@ -70,7 +70,6 @@ h2 {
   font-family: "Kanit", sans-serif;
   letter-spacing: -1px;
   font-weight: 500;
-  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -176,8 +175,7 @@ header {
   z-index: 1;
   overflow: hidden;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-left: 0%;
 }
 
@@ -272,10 +270,6 @@ header {
   font-size: var(--smaller-font-size);
   height: 2.7rem;
   color: var(--first-color);
-}
-.search-bar ::-moz-placeholder {
-  color: var(--text-color);
-  font-weight: 400;
 }
 .search-bar ::placeholder {
   color: var(--text-color);
@@ -420,8 +414,7 @@ form i {
   border-radius: 1rem;
 }
 .prop-items .prop-item img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 170px;
   border-radius: 1rem;
@@ -434,7 +427,7 @@ form i {
   border-radius: 1rem;
   margin: 0.5rem;
   padding: 0.4rem;
-  z-index: 99;
+  z-index: 999;
   cursor: pointer;
   color: var(--first-color);
 }
@@ -487,8 +480,7 @@ form i {
   align-items: center;
 }
 .contact-text img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 400px;
   height: 450px;
   border-top-left-radius: 50%;
@@ -533,9 +525,7 @@ form i {
 }
 .contact-title .contact-methods .method a {
   /*                 border: 1px solid magenta; */
-  width: -moz-fit-content;
   width: fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   margin-right: 1rem;
@@ -553,44 +543,8 @@ form i {
   margin-top: 0.1rem;
 }
 
-footer {
-  background-color: var(--first-color);
-  margin-top: 5.5rem;
-}
-footer .footer-container {
-  width: 100%;
-  padding-top: 1.3rem;
-  padding-bottom: 1.3rem;
-}
-footer .footer-container .footer-text {
-  /*             border: 4px solid yellow; */
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-footer .footer-container .footer-text .footer-cn {
-  /*                 border: 1px solid red; */
-  max-width: 220px;
-  min-width: 180px;
-  display: flex;
-  flex-direction: column;
-}
-footer .footer-container .footer-text .footer-cn h6 {
-  color: var(--white-color);
-  font-size: 1.3rem;
-  font-weight: 400;
-  margin-bottom: 0.5rem;
-  font-family: "Kanit", sans-serif;
-}
-footer .footer-container .footer-text .footer-cn a, footer .footer-container .footer-text .footer-cn p {
-  color: var(--white-color);
-  font-size: var(--normal-font-size);
-  font-weight: 300;
-}
-footer .footer-container .footer-text .footer-cn a:hover {
-  color: var(--second-color);
+footer h6 {
+  color: blue;
 }
 
 @media (max-width: 996px) {
@@ -636,4 +590,6 @@ footer .footer-container .footer-text .footer-cn a:hover {
   .home-text p {
     max-width: 100%;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
