@@ -1,0 +1,52 @@
+
+
+@media (max-width: 996px){
+    header{
+        padding: 18px 3%;
+        background-color: green;  
+      }
+  
+      .menu-icon{
+          display: block;
+      }
+  
+      .navbar{
+          position: absolute;
+          top: -500px;
+          left: 0;
+          right: 0;
+          display: flex;
+          flex-direction: column;
+          background-color: var(--body-color);
+          text-align: left;
+          transition: 0.3s ease;
+          background-color: yellow;
+      }
+  
+      .navbar a{
+          display: block;    
+          padding: 1rem;
+          border-left: 2px solid var(--first-color);
+          margin: 0.5rem;
+          background-color: red;
+      }
+  
+      .navbar.active{
+          top: 100%;
+      }
+}
+
+@media (max-width: 512px){
+    .home{
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+        height: 80vh;
+        justify-content: center;
+    }
+
+    .home-text p{
+        max-width: 100%;
+    }
+}
